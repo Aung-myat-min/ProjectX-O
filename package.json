@@ -1,36 +1,39 @@
 {
-  "name": "project_x-o",
-  "version": "1.0.0",
-  "description": "Real-Time Tic-Tac-Toe Online Game Backend",
-  "homepage": "https://github.com/Aung-myat-min/ProjectX-O#readme",
-  "bugs": {
-    "url": "https://github.com/Aung-myat-min/ProjectX-O/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aung-myat-min/ProjectX-O.git"
-  },
-  "license": "ISC",
-  "author": "AMM & Adi",
-  "type": "commonjs",
-  "main": "server.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon",
-    "build": "tsc",
-    "start": "node dist/server.js"
-  },
-  "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.14.1",
-    "eslint": "^9.25.0",
-    "nodemon": "^3.1.9",
-    "prettier": "^3.5.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  }
+	"name": "project_x-o",
+	"version": "1.0.0",
+	"description": "Real-Time Tic-Tac-Toe Online Game Backend",
+	"homepage": "https://github.com/Aung-myat-min/ProjectX-O#readme",
+	"bugs": {
+		"url": "https://github.com/Aung-myat-min/ProjectX-O/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Aung-myat-min/ProjectX-O.git"
+	},
+	"license": "ISC",
+	"author": "AMM & Adi",
+	"type": "commonjs",
+	"main": "server.ts",
+	"scripts": {
+		"build": "rimraf dist && tsc",
+		"prestart": "pnpm run build",
+		"format": "prettier \"src/**/*.ts\" --write",
+		"start": "node dist/server.js",
+		"dev": "nodemon",
+		"lint": "eslint . --ext .ts"
+	},
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.1",
+		"@types/node": "^22.14.1",
+		"globals": "^16.0.0",
+		"nodemon": "^3.1.9",
+		"prettier": "^3.5.3",
+		"rimraf": "^6.0.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	}
 }
