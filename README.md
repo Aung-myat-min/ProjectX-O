@@ -16,7 +16,8 @@
   <img src="./assets/icon.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Project X/O</h3>
-
+  <p align="center"><a href="./docs">>> Documentation</a></p>
+  
   <p align="center">
     Real-Time Tic-Tac-Toe Online Game Backend
     <br />
@@ -39,7 +40,6 @@
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     
   </ol>
@@ -52,7 +52,7 @@
 [//]: # "Add project screenshot if you have one"
 
 <div align="center"> 
-  <img src="https://github.com/Aung-myat-min/ProjectX-O/blob/main/assets/screenshot.png?raw=true" alt="Project Screenshot" width="100%" style="max-width: 800px;"> 
+  <img src="./assets/screenshot.png" alt="Project Screenshot" width="100%" style="max-width: 800px;"> 
 </div>
 
 [//]: # "Provide more detail about your project here. Explain the problem it solves and why it's useful."
@@ -79,12 +79,16 @@ This section should list any major prerequisites and provide simple steps to get
 1.  Clone the repo
     ```sh
     git clone https://github.com/Aung-myat-min/ProjectX-O.git
+    cd ProjectX-O
     ```
 2.  Install NPM packages (or other dependencies)
     ```sh
     pnpm install
     ```
-3.  [//]: # "Add any other setup steps like environment variables, database setup, etc."
+3.  Start the server
+    ```sh
+    pnpm dev
+    ```
 
 <!-- USAGE EXAMPLES -->
 
@@ -92,12 +96,16 @@ This section should list any major prerequisites and provide simple steps to get
 
 [//]: # "Provide instructions and examples for use. Include screenshots or code blocks as needed."
 
-_For more examples, please refer to the [Documentation](link/to/your/docs)_ <!-- Link this if you have separate docs -->
+_For more examples, please refer to the [Documentation](./docs/)_ <!-- Link this if you have separate docs -->
+
+## Contributing
+
+_For contributing refer to [Docs](./docs/contributing.md)_
 
 ### Contributors:
 
 <a href="https://github.com/Aung-myat-min/ProjectX-O/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Aung-myat-min/ProjectX-O" alt="contrib.rocks image" />
+  <img src="https://contrib.rocks/image?repo=Aung-myat-min/ProjectX-O" />
 </a>
 
 <!-- ACKNOWLEDGMENTS -->
@@ -125,13 +133,13 @@ Distributed under the Unlicense License. See `LICENSE` file for more information
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/aditsuru-git/https://github.com/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
 [contributors-url]: https://github.com/Aung-myat-min/ProjectX-O/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/aditsuru-git/https://github.com/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
 [forks-url]: https://github.com/Aung-myat-min/ProjectX-O/network/members
-[stars-shield]: https://img.shields.io/github/stars/aditsuru-git/https://github.com/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
 [stars-url]: https://github.com/Aung-myat-min/ProjectX-O/stargazers
-[issues-shield]: https://img.shields.io/github/issues/aditsuru-git/https://github.com/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Aung-myat-min/ProjectX-O.svg?style=for-the-badge
 [issues-url]: https://github.com/Aung-myat-min/ProjectX-O/issues
 [license-shield]: https://img.shields.io/github/license/aditsuru-git/wadwa.svg?style=for-the-badge
 [license-url]: https://github.com/aditsuru-git/wadwa/blob/main/LICENSE
