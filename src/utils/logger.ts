@@ -2,6 +2,7 @@ import config from "../config";
 import winston from "winston";
 const { combine, printf, colorize } = winston.format;
 
+// for adding colors to your logs follow the syntax: ${colors.color} + your string + ${colors.reset}
 const colors = {
 	reset: "\u001b[38;5;231m",
 	black: "\u001b[38;5;0m",
