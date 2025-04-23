@@ -1,8 +1,11 @@
 import express from "express";
 import config from "./config";
+import { logger, colors } from "./utils/logger";
 
 const app = express();
 
 app.listen(config.port, () => {
-	console.log(`Server running at http://localhost:${config.port}`);
+	logger.info(
+		`Server running at ${colors.cyan}http://localhost:${config.port + colors.reset}`
+	);
 });
