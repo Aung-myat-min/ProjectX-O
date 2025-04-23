@@ -12,12 +12,6 @@ We use templates to standardize our issue creation process. Choose the appropria
 - **Labels:** Add relevant label (`feature`, `bugfix`, `chore`, etc).
 - **Assignee:** Assign yourself via GitHub sidebar if you're picking it up.
 
-## Available Templates
-
-- **Feature Request**: For new features or enhancements
-- **Bug Report**: For reporting bugs or unexpected behavior
-- **Chore**: For maintenance tasks, documentation, or refactoring
-
 ## Working with Issues
 
 - Browse open issues or check the [GitHub Project Board](https://github.com/users/Aung-myat-min/projects/6)
