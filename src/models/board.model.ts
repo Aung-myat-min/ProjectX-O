@@ -1,22 +1,35 @@
 import { IBoard } from "@/types";
 
 enum BoardCell {
-	null = "",
 	X = "X",
 	O = "O",
 }
 
+type CellValue = BoardCell | null;
+
 class Board implements IBoard {
 	boardId: string;
-	board: BoardCell[][];
+	board: CellValue[][];
 
-	constructor(boardId: string) {
+	constructor(boardId: string, board?: CellValue[][]) {
 		this.boardId = boardId;
-		this.board = [
-			[BoardCell.null, BoardCell.null, BoardCell.null],
-			[BoardCell.null, BoardCell.null, BoardCell.null],
-			[BoardCell.null, BoardCell.null, BoardCell.null],
+		this.board = board ?? [
+			[null, null, null],
+			[null, null, null],
+			[null, null, null],
 		];
+	}
+
+	toJSON(): string {
+		return JSON.stringify({
+			boardId: this.boardId,
+			board: this.board,
+		});
+	}
+
+	static fromJSON(data: string): Board {
+		const obj = JSON.parse(data);
+		return new Board(obj.boardId, obj.board);
 	}
 }
 
