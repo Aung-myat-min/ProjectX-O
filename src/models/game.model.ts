@@ -1,5 +1,5 @@
-import { IGame } from "@/types";
-import { Player, PlayerChoice } from "./player.model";
+import { IGame, PlayerChoice } from "@/types";
+import { Player } from "./player.model";
 import { Board } from "./board.model";
 
 class Game implements IGame {

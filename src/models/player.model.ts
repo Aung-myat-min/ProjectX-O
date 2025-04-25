@@ -1,9 +1,4 @@
-import { IPlayer } from "@/types";
-
-enum PlayerChoice {
-	X = "X",
-	O = "O",
-}
+import { IPlayer, PlayerChoice } from "@/types";
 
 class Player implements IPlayer {
 	playerId: string;
@@ -24,4 +19,4 @@ class Player implements IPlayer {
 	}
 }
 
-export { Player, PlayerChoice };
+export { Player };

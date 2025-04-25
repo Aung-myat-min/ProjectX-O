@@ -18,4 +18,9 @@ interface IGame {
 	active: boolean;
 }
 
-export { IPlayer, IBoard, IGame };
+enum PlayerChoice {
+	X = "X",
+	O = "O",
+}
+
+export { IPlayer, IBoard, IGame, PlayerChoice };
