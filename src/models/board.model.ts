@@ -1,4 +1,4 @@
-import { IBoard, PlayerChoice } from "@/types";
+import { IBoard, PlayerChoice } from "@/types/types";
 
 type CellValue = PlayerChoice | null;
 

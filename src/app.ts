@@ -7,16 +7,14 @@ import {
 	CreateRoomData,
 	JoinRoomData,
 	LeaveRoomData,
-	StartGameData,
 	MakeMoveData,
-	LeaveGameData,
-} from "./dtos";
+} from "./types/dtos";
 
 // room event controllers import
 import { createRoom, joinRoom, leaveRoom } from "./controllers/room.controller";
 
 // game event controllers import
-import { startGame, makeMove, leaveGame } from "./controllers/game.controller";
+import { makeMove } from "./controllers/game.controller";
 
 // middlewares
 import { authenticatePlayer } from "./middlewares/auth.middleware";
@@ -39,9 +37,7 @@ io.on("connection", (socket) => {
 	socket.use(authenticatePlayer);
 
 	// game event controllers
-	socket.on("game:start", (data: StartGameData) => startGame(socket, data));
 	socket.on("game:move", (data: MakeMoveData) => makeMove(socket, data));
-	socket.on("game:leave", (data: LeaveGameData) => leaveGame(socket, data));
 });
 
 export default server;
