@@ -1,5 +1,5 @@
 import { Socket } from "socket.io";
-import { CreateRoomData, JoinRoomData, LeaveRoomData } from "../dtos";
+import { CreateRoomData, JoinRoomData, LeaveRoomData } from "../types/dtos";
 
 function createRoom(socket: Socket, data: CreateRoomData) {}
 function joinRoom(socket: Socket, data: JoinRoomData) {}

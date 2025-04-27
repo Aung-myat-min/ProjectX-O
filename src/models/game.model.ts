@@ -1,4 +1,4 @@
-import { IGame, PlayerChoice } from "@/types";
+import { IGame, PlayerChoice } from "@/types/types";
 import { Player } from "./player.model";
 import { Board } from "./board.model";
 

@@ -1,4 +1,4 @@
-import { IPlayer, PlayerChoice } from "@/types";
+import { IPlayer, PlayerChoice } from "@/types/types";
 
 class Player implements IPlayer {
 	playerId: string;

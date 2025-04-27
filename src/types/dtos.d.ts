@@ -9,6 +9,3 @@ export interface MakeMoveData {
 	roomID: string;
 	playerMove: BoardPosition;
 }
-
-export interface StartGameData {}
-export interface LeaveGameData {}
