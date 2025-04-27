@@ -1,13 +1,10 @@
-function startGame() {}
+import { Socket } from "socket.io";
+import { StartGameData, MakeMoveData, LeaveGameData } from "../dtos";
 
-// following the dtos
-type BoardPosition = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
-function makeMove(
-	playerID: string,
-	roomID: string,
-	playerMove: BoardPosition
-) {}
+function startGame(socket: Socket, data: StartGameData) {}
 
-function leaveGame() {}
+function makeMove(socket: Socket, data: MakeMoveData) {}
+
+function leaveGame(socket: Socket, data: LeaveGameData) {}
 
 export { startGame, makeMove, leaveGame };
