@@ -26,6 +26,10 @@ class CustomResponse<T> {
 	static notFound<T>(message: string, data?: T): CustomResponse<T> {
 		return new CustomResponse(CStatus.notFound, message, data);
 	}
+
+	static serverErr<T>(message: string): CustomResponse<T> {
+		return new CustomResponse(CStatus.serverErr, message);
+	}
 }
 
 export { CustomResponse };

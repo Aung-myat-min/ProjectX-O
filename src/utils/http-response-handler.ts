@@ -17,7 +17,7 @@ export function HttpResponseHandler<T>(data: CustomResponse<T>, res: Response) {
 			case CStatus.notFound:
 				res.status(404).json(data);
 			default:
-				res.status(500).json({ message: "Invalid Status!" });
+				res.status(500).json({ message: "Internal Server Error!" });
 		}
 	}
 }

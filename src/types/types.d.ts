@@ -29,6 +29,7 @@ enum CStatus {
 	invalidData = 2,
 	fail = 3,
 	notFound = 4,
+	serverErr = 5,
 }
 
 export { IPlayer, IBoard, IGame, PlayerChoice, CStatus };
