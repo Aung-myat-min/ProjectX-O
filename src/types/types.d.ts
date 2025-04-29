@@ -23,4 +23,12 @@ enum PlayerChoice {
 	O = "O",
 }
 
-export { IPlayer, IBoard, IGame, PlayerChoice };
+enum CStatus {
+	notSepcified = 0,
+	success = 1,
+	invalidData = 2,
+	fail = 3,
+	notFound = 4,
+}
+
+export { IPlayer, IBoard, IGame, PlayerChoice, CStatus };
