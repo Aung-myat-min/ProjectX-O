@@ -1,11 +1,11 @@
 import { CustomResponse } from "./custom-response";
-import server from "../app";
 import { CStatus } from "@/types/types";
 import { Response } from "express";
+import { logger } from "./logger";
 
 export function HttpResponseHandler<T>(data: CustomResponse<T>, res: Response) {
 	if (data.status == CStatus.notSepcified) {
-		console.error(data.message);
+		logger.error(data.message);
 	} else {
 		switch (data.status) {
 			case CStatus.success:
