@@ -1,4 +1,4 @@
-export interface CreateRoomData {}
+export type CreateRoomData = string;
 export interface JoinRoomData {}
 export interface LeaveRoomData {}
 

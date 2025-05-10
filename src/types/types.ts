@@ -5,7 +5,7 @@ interface IPlayer {
 
 interface IBoard {
 	boardId: string;
-	board: BoardCell[][];
+	// board: BoardCell[][]; // needs correction
 }
 
 interface IGame {

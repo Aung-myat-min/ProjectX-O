@@ -1,5 +1,6 @@
 export enum SocketEmitEvents {
 	GameStart = "gameStart",
+	RoomCreated = "room:created",
 	UpdateMove = "updateMove",
 	PlayerJoined = "pJoined",
 	PlayerDisconnected = "pDisconnected",
@@ -8,6 +9,7 @@ export enum SocketEmitEvents {
 
 export enum SocketListenEvents {
 	Connect = "connect",
+	RoomCreate = "room:create",
 	Disconnect = "disconnect",
 	Reconnect = "reconnect",
 	MakeAMove = "makeAMove",
