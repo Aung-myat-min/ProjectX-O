@@ -22,7 +22,7 @@ export async function createGame() {
 	const player1 = new Player(await generateUniquePlayerId(), playerChoice1);
 	const player2 = new Player(await generateUniquePlayerId(), playerChoice2);
 
-	const game = new Game(roomID, player1, player2, new Board(""));
+	const game = new Game(roomID, player1, player2, new Board(roomID));
 	logger.debug(game.active);
 	return game;
 }
