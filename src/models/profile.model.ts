@@ -1,3 +1,5 @@
+import { createUniqueCode } from "@/utils/create-unique-code";
+
 class Profile {
 	private _userCode: string;
 	displayName: string;
@@ -16,7 +18,9 @@ class Profile {
 	}
 
 	public static init(displayName: string){
-		const newUserCode = "";
+		const newUserCode = createUniqueCode();
 		return new Profile(newUserCode, displayName, [], [],  null, new Date());
 	}
 }
+
+export { Profile };
