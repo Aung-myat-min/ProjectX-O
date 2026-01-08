@@ -1,7 +1,7 @@
 import { createUniqueCode } from "@/utils/create-unique-code";
 
 class Profile {
-	private _userCode: string;
+	private readonly _userCode: string;
 	displayName: string;
 	private _createdGame: string[];
 	private _wonMatches: string[];
@@ -21,6 +21,28 @@ class Profile {
 		const newUserCode = createUniqueCode();
 		return new Profile(newUserCode, displayName, [], [],  null, new Date());
 	}
+
+	get userCode(){
+		return this._userCode;
+	}
+
+	get createdGame(){
+		return this._createdGame;
+	}
+
+	get wonMatches(){
+		return this._wonMatches;
+	}
+
+	get currentGame(){
+		return this._currentGame;
+	}
+
+	public createNewGame(){}
+
+	public updateWonMatches(){}
+
+	public updateCurrentGame(){}
 }
 
 export { Profile };

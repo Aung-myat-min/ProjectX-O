@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03ec4e36-e0d9-44c5-b015-18ac9caee42d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/create-unique-code.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/profile.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profile.model.ts" afterDir="false" />
-    </list>
+    <list default="true" id="03ec4e36-e0d9-44c5-b015-18ac9caee42d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +101,7 @@
       <workItem from="1767486881262" duration="206000" />
       <workItem from="1767487295856" duration="410000" />
       <workItem from="1767487734484" duration="5529000" />
-      <workItem from="1767835125405" duration="818000" />
+      <workItem from="1767835125405" duration="1270000" />
     </task>
     <servers />
   </component>
