@@ -4,7 +4,6 @@ interface IPlayer {
 }
 
 interface IBoard {
-	boardId: string;
 	board: BoardCell[][];
 }
 

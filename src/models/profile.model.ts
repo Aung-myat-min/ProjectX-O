@@ -38,11 +38,17 @@ class Profile {
 		return this._currentGame;
 	}
 
-	public createNewGame(){}
+	public addNewGame(gameId: string){
+		this._createdGame.push(gameId);
+	}
 
-	public updateWonMatches(){}
+	public updateWonMatches(gameId: string){
+		this._wonMatches.push(gameId);
+	}
 
-	public updateCurrentGame(){}
+	public updateCurrentGame(gameId: string | null){
+		this._currentGame = gameId;
+	}
 }
 
 export { Profile };

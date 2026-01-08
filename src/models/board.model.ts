@@ -1,23 +1,20 @@
 import { IBoard } from "@/types";
-
-enum BoardCell {
-	null = "",
-	X = "X",
-	O = "O",
-}
+import { BoardCell } from "@/models/enums/BoardCell";
 
 class Board implements IBoard {
-	boardId: string;
 	board: BoardCell[][];
 
-	constructor(boardId: string) {
-		this.boardId = boardId;
-		this.board = [
+	private constructor(board?: BoardCell[][]) {
+		this.board = board ?? [
 			[BoardCell.null, BoardCell.null, BoardCell.null],
 			[BoardCell.null, BoardCell.null, BoardCell.null],
 			[BoardCell.null, BoardCell.null, BoardCell.null],
 		];
 	}
+
+	public static init(): Board {
+		return new Board();
+	}
 }
 
-export { IBoard, BoardCell, Board };
+export { Board };

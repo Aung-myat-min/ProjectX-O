@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ec4e36-e0d9-44c5-b015-18ac9caee42d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/enums/PlayerChoice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/game.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/game.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/player.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/player.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/enums/BoardCell.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/board.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/board.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/profile.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profile.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +76,7 @@
       <recent name="D:\GitHub\colab\ProjectX-O" />
     </key>
     <key name="es6.move.members.recent.items">
+      <recent name="D:\GitHub\colab\ProjectX-O\src\models\enums\BoardCell.ts" />
       <recent name="D:\GitHub\colab\ProjectX-O\src\models\enums\PlayerChoice.ts" />
     </key>
   </component>
@@ -112,7 +114,7 @@
       <workItem from="1767486881262" duration="206000" />
       <workItem from="1767487295856" duration="410000" />
       <workItem from="1767487734484" duration="5529000" />
-      <workItem from="1767835125405" duration="1537000" />
+      <workItem from="1767835125405" duration="2206000" />
     </task>
     <servers />
   </component>
