@@ -7,14 +7,14 @@ interface IPlayer {
 // 	private _board: BoardCell[][];
 // }
 
-interface IGame {
-	roomId: string;
-	player1: IPlayer;
-	player2: IPlayer;
-	winnerId: string | null;
-	board: IBoard;
-	turn: PlayerChoice;
-	active: boolean;
-}
+// interface IRoom {
+// 	roomCode: string;
+// 	player1: IPlayer;
+// 	player2: IPlayer;
+// 	winnerId: string | null;
+// 	board: IBoard;
+// 	currentTurn: PlayerChoice;
+// 	active: boolean;
+// }
 
-export { IPlayer, IBoard, IGame };
+export { IPlayer, IBoard, IRoom };
