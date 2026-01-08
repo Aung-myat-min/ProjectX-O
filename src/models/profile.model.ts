@@ -8,7 +8,14 @@ class Profile {
 	private _currentGame: string | null;
 	createdAt: Date;
 
-	private constructor(userCode: string, displayName: string, createdGame: string[], wonMatches: string[], currentGame: string | null, createdAt: Date) {
+	private constructor(
+		userCode: string,
+		displayName: string,
+		createdGame: string[],
+		wonMatches: string[],
+		currentGame: string | null,
+		createdAt: Date
+	) {
 		this._userCode = userCode;
 		this.displayName = displayName;
 		this._createdGame = createdGame;
@@ -17,38 +24,64 @@ class Profile {
 		this.createdAt = createdAt;
 	}
 
-	public static init(displayName: string){
+	public static init(displayName: string) {
 		const newUserCode = createUniqueCode();
-		return new Profile(newUserCode, displayName, [], [],  null, new Date());
+		return new Profile(newUserCode, displayName, [], [], null, new Date());
 	}
 
-	get userCode(){
+	//region: getters
+	get userCode() {
 		return this._userCode;
 	}
 
-	get createdGame(){
+	get createdGame() {
 		return this._createdGame;
 	}
 
-	get wonMatches(){
+	get wonMatches() {
 		return this._wonMatches;
 	}
 
-	get currentGame(){
+	get currentGame() {
 		return this._currentGame;
 	}
+	//endregion
 
-	public addNewGame(gameId: string){
+	public addNewGame(gameId: string) {
 		this._createdGame.push(gameId);
 	}
 
-	public updateWonMatches(gameId: string){
+	public updateWonMatches(gameId: string) {
 		this._wonMatches.push(gameId);
 	}
 
-	public updateCurrentGame(gameId: string | null){
+	public updateCurrentGame(gameId: string | null) {
 		this._currentGame = gameId;
 	}
+
+	//region: JSON conversion methods
+	public toJSON(): object {
+		return {
+			userCode: this._userCode,
+			displayName: this.displayName,
+			createdGame: this._createdGame,
+			wonMatches: this._wonMatches,
+			currentGame: this._currentGame,
+			createdAt: this.createdAt.toISOString(),
+		};
+	}
+
+	public static fromJSON(json: any): Profile {
+		return new Profile(
+			json.userCode,
+			json.displayName,
+			json.createdGame || [],
+			json.wonMatches || [],
+			json.currentGame || null,
+			new Date(json.createdAt)
+		);
+	}
+	//endregion
 }
 
 export { Profile };

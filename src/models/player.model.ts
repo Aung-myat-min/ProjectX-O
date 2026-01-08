@@ -9,6 +9,19 @@ class Player implements IPlayer {
 		this.playerId = playerId;
 		this.choice = choice;
 	}
+
+	//region: JSON conversion methods
+	public toJSON(): object {
+		return {
+			playerId: this.playerId,
+			choice: this.choice,
+		};
+	}
+
+	public static fromJSON(json: any): Player {
+		return new Player(json.playerId ?? null, json.choice);
+	}
+	//endregion
 }
 
 export { Player };

@@ -93,6 +93,24 @@ class Board {
 	public makeAMove(row: number, col: number, playerChoice: PlayerChoice): void {
 		this._board[row][col] = playerChoice;
 	}
+
+	//region: JSON conversion methods
+	public toJSON(): object {
+		return {
+			board: this._board,
+		};
+	}
+
+	public static fromJSON(json: any): Board {
+		const board = json.board ?? [
+			[null, null, null],
+			[null, null, null],
+			[null, null, null],
+		];
+
+		return new Board(board);
+	}
+	//endregion
 }
 
 export { Board };
