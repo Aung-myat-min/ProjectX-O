@@ -1,5 +1,5 @@
 interface IPlayer {
-	playerId: string;
+	playerId: string | null;
 	choice: PlayerChoice;
 }
 

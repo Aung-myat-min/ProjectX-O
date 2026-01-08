@@ -1,18 +1,14 @@
 import { IPlayer } from "@/types";
-
-enum PlayerChoice {
-	X = "X",
-	O = "O",
-}
+import { PlayerChoice } from "@/models/enums/PlayerChoice";
 
 class Player implements IPlayer {
-	playerId: string;
+	playerId: string | null;
 	choice: PlayerChoice;
 
-	constructor(playerId: string, choice: PlayerChoice) {
+	constructor(playerId: string | null, choice: PlayerChoice) {
 		this.playerId = playerId;
 		this.choice = choice;
 	}
 }
 
-export { Player, PlayerChoice };
+export { Player };

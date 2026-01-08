@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03ec4e36-e0d9-44c5-b015-18ac9caee42d" name="Changes" comment="" />
+    <list default="true" id="03ec4e36-e0d9-44c5-b015-18ac9caee42d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/models/enums/PlayerChoice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/game.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/game.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/player.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/player.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.d.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +37,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="37loB53yKNPW0cTQ1zc80zoHKrd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,6 +73,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\colab\ProjectX-O" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="D:\GitHub\colab\ProjectX-O\src\models\enums\PlayerChoice.ts" />
     </key>
   </component>
   <component name="RunManager">
@@ -101,7 +112,7 @@
       <workItem from="1767486881262" duration="206000" />
       <workItem from="1767487295856" duration="410000" />
       <workItem from="1767487734484" duration="5529000" />
-      <workItem from="1767835125405" duration="1270000" />
+      <workItem from="1767835125405" duration="1537000" />
     </task>
     <servers />
   </component>

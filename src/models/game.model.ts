@@ -1,6 +1,7 @@
 import { IGame } from "@/types";
-import { Player, PlayerChoice } from "./player.model";
+import { Player } from "./player.model";
 import { Board } from "./board.model";
+import { PlayerChoice } from "@/models/enums/PlayerChoice";
 
 class Game implements IGame {
 	roomId: string;
