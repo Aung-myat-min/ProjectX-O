@@ -1,17 +1,20 @@
-import { IBoard } from "@/types";
 import { PlayerChoice } from "@/models/enums/PlayerChoice";
 
 type CellValue = PlayerChoice | null;
 
-class Board implements IBoard {
-	board: CellValue[][];
+class Board {
+	private _board: CellValue[][];
 
 	private constructor(board?: CellValue[][]) {
-		this.board = board ?? [
+		this._board = board ?? [
 			[null, null, null],
 			[null, null, null],
 			[null, null, null],
 		];
+	}
+
+	get getBoard(): CellValue[][] {
+		return this._board;
 	}
 
 	public static init(): Board {
@@ -44,14 +47,14 @@ class Board implements IBoard {
 		return result;
 	}
 
-	determineWinner(): PlayerChoice | null {
+	public determineWinner(): PlayerChoice | null {
 		let result = null;
-		const height = this.board.length;
-		const width = this.board[0].length;
+		const height = this._board.length;
+		const width = this._board[0].length;
 
 		//Check Horizontally
 		for (let i = 0; i < height; i++) {
-			const checkPerRow = this.checkRow(this.board[i]);
+			const checkPerRow = this.checkRow(this._board[i]);
 			if (checkPerRow != null) {
 				result = checkPerRow;
 				break;
@@ -63,7 +66,7 @@ class Board implements IBoard {
 			for (let i = 0; i < height; i++) {
 				const vertiaclRow = [];
 				for (let j = 0; j < width; j++) {
-					vertiaclRow.push(this.board[j][i]);
+					vertiaclRow.push(this._board[j][i]);
 				}
 				const checkVPerRow = this.checkRow(vertiaclRow);
 				if (checkVPerRow != null) {
@@ -78,13 +81,17 @@ class Board implements IBoard {
 			const diag1: CellValue[] = [];
 			const diag2: CellValue[] = [];
 			for (let i = 0; i < height; i++) {
-				diag1.push(this.board[i][i]);
-				diag2.push(this.board[i][width - 1 - i]);
+				diag1.push(this._board[i][i]);
+				diag2.push(this._board[i][width - 1 - i]);
 			}
 			result = this.checkRow(diag1) ?? this.checkRow(diag2);
 		}
 
 		return result;
+	}
+
+	public makeAMove(row: number, col: number, playerChoice: PlayerChoice): void {
+		this._board[row][col] = playerChoice;
 	}
 }
 

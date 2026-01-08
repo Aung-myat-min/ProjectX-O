@@ -3,9 +3,9 @@ interface IPlayer {
 	choice: PlayerChoice;
 }
 
-interface IBoard {
-	board: BoardCell[][];
-}
+// interface IBoard {
+// 	private _board: BoardCell[][];
+// }
 
 interface IGame {
 	roomId: string;
