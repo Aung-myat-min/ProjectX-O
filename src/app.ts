@@ -6,7 +6,7 @@ import { Server } from "socket.io";
 import { createRoom, joinRoom, leaveRoom } from "./controllers/room.controller";
 
 // game event controllers import
-import { startGame, makeMove, leaveGame } from "./controllers/game.controller";
+import { startGame, makeMove, leaveGame } from "./controllers/room.controller";
 
 // middlewares
 import { authenticatePlayer } from "./middlewares/auth.middleware";
