@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="03ec4e36-e0d9-44c5-b015-18ac9caee42d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/redis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/redis.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/profile.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/profile.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/cutom-response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/custom-response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/room.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/room.repository.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
