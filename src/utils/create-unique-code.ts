@@ -1,11 +1,8 @@
+import { customAlphabet } from "nanoid";
+
+// Create a custom alphabet generator (uppercase letters only)
+const nanoid = customAlphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6);
+
 export function createUniqueCode(): string {
-	const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	let result = "";
-
-	for (let i = 0; i < 6; i++) {
-		const randomIndex = Math.floor(Math.random() * chars.length);
-		result += chars[randomIndex];
-	}
-
-	return result;
+	return nanoid(); // Generates a 6-character unique code like "XKTPMZ"
 }

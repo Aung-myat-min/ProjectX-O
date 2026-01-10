@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ec4e36-e0d9-44c5-b015-18ac9caee42d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/room.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/room.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/create-unique-code.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/create-unique-code.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
